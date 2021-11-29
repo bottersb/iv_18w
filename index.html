@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="js/fabric.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+	
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Water Quality of San Francisco Bay</title>
+</head>
+<body>
+	<div id="singleRow" class="row">
+		<div id="map">
+			<canvas id="mapCanvas" class="canvas"></canvas>
+			<div id="loader" class="loader rotate" ></div>
+			<div id="compass" class="loader" ></div>
+			<div id="colorLegend">
+			</div>
+		</div>
+		<div class="col-sm-5">
+			<div class="col-sm-8 seperated">
+				<div class="row">
+					<span class="h1 blocks">Oxygen Saturation %</span>
+					<span class="title">Displaying the oxygen saturation percentage at selected spots at a depth of 1m. Samples were taken in the San Francisco Bay by the U.S. Geological Survey. For more information visit <a href="https://sfbay.wr.usgs.gov/access/wqdata/overview/index.html">the official project website</a>.
+					</span>
+				</div>
+
+				<div id="input-group" class="input-group row">
+					<div id="dateSelector" class="input-group date" data-date-format="dd.mm.yyyy">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Choose Date: </span>
+						</div>
+						<input type="text" class="form-control" placeholder="MM.YYYY">
+						<div class="input-group-addon">
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="station-info-container" class="col-sm-8 info" >
+				<div class="infoHeader">
+					<span class="h3 blocks ">Station Info</span>
+					<span id="station-info" class="blocks"></span>
+				</div>
+				<span id="station-data" class="data-table"></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

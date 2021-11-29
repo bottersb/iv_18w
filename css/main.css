@@ -1,0 +1,92 @@
+body {
+	width: 99%;
+}
+
+td{
+	text-align: center;
+	/*border: 1px solid #dadada;*/
+	border: 1px solid #e9ecef;
+}
+
+th{
+	text-align: center;
+	font-weight: : bold;
+	/*background: #dadada;*/
+	background: #e9ecef;
+}
+
+#map {
+	position: relative;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+.info{
+	margin-top: 20px;
+}
+
+.title{
+	text-align: justify;
+	margin-bottom: 5px;
+}
+
+.blocks{
+	display:block;
+	width: 100%;
+	padding: 5px;
+}
+
+.canvas{
+	position: relative;
+	border: solid 1px;
+}
+
+.infoHeader{
+	background-color: #bababa;
+}
+
+.dataTable{
+    height: 600px;
+	width: 100%;
+	background-color: white;
+}
+
+/*#station-data{
+	display:block;
+}*/
+
+.legend-element {
+	height: 20px;
+	float: left;
+	text-align: center;
+	font: 15px arial, sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px white;
+}
+
+.seperated{
+	padding-bottom: 20px;
+	border-bottom: solid black 2px;
+}
+
+.loader {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border: 6px solid #f3f3f3; /* Light grey */
+	border-top: 6px solid #3498db; /* Blue */
+	border-radius: 50%;
+	z-index: 1;
+	width: 30px;
+	height: 30px;
+}
+
+.rotate{
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
